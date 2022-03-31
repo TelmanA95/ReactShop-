@@ -5,6 +5,7 @@
   padding: 50px;
 }
 
+
 .imgDiv {
   width: 300px;
   height: 300px;
@@ -55,4 +56,35 @@
   text-align: center;
   font-size: 12px; 
   letter-spacing: 2px;
+}
+
+
+.titleStore {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+  }
+  .line {
+    margin-top: 15px;
+    width: 36px;
+    height: 3px;
+    background-color: #444631;
+    text-align: center;
+  }
+  
+}
+
+.storeTxt{
+  width: 45%;
+  letter-spacing: 2px;
+  line-height: 2;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+ 
 }
