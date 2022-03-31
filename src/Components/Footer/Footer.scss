@@ -1,0 +1,30 @@
+.footer {
+    font-family: Montserrat, sans-serif;;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color:  rgba(33, 33, 33, 0.7);;
+  margin-top: 25px;
+  div {
+    width: 25%;
+    font-size: 1rem;
+    line-height: 35px;
+    h3 {
+      padding-bottom: 15px;
+    }
+    ul {
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+.social {
+  padding-left: 30px;
+
+  
+}
+
+.browse {
+  padding-left: 30px;
+}
