@@ -24,9 +24,9 @@
     width: 100%;
     height: 50px;
     background-color: #444631;
-    color: white;
+    color: #FFFFFF;
     position: absolute;
-    top: 260px;
+    bottom: 0;
     transition: 0.5s linear;
 
     .optionDiv {
@@ -38,6 +38,8 @@
     }
     p {
       text-align: center;
+      font-size: 11px;
+      letter-spacing: 1px;
     }
   }
 }
@@ -46,9 +48,11 @@
     opacity: 1;
   }
 }
-.nameDiv {
+.nameDivs {
   width: 250px;
-  height: 200px;
+  height: auto;
   margin-top: 20px;
   text-align: center;
+  font-size: 12px; 
+  letter-spacing: 2px;
 }

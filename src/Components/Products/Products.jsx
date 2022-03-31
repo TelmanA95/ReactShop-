@@ -29,7 +29,7 @@ export default function Products() {
                 </div>
               </div>
             </div>
-            <div className="nameDiv">
+            <div className="nameDivs">
               <h3>{item.title}</h3>
               <span>${item.price}</span>
             </div>

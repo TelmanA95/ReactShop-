@@ -6,7 +6,7 @@ import '../Modal/modal.scss'
 export default function ModalMenu() {
     const count = useSelector(selectCount)
     const prods = useSelector(selectProd);
-    const newProd = prods?.slice(0,1);
+    const newProd = prods?.slice(3,4);
     const dispatch = useDispatch()
     function minus(){
         if(count < 2){
@@ -25,7 +25,7 @@ export default function ModalMenu() {
                <h1>Clubber Tee</h1>
                <br></br>
                <p>The only prerequisite to join the gang is your love for bikes and a passion for the twist of the wrist. 
-               Jump on a bike, free your mind and the rest will follow. <span className='spanLearn'>Learn More</span></p>
+               Jump on a bike, free your mind and the rest will follow. <a className='spanLearn'>Learn More</a></p>
                
                <span className='price'>${item.price}</span>
                <hr className='line'></hr>
@@ -33,7 +33,7 @@ export default function ModalMenu() {
                <div className='sizeFlex'>
                    <div className='sizeDiv sizeDiv1'>M</div>
                    <div className='sizeDiv'>L</div>
-                   <div className='sizeDiv'>XL</div>
+                   <div className='sizeDivXl'>XL</div>
                </div>
                <h2 className='colorTitle'>Color</h2>
                <div className='colorDiv'>

@@ -8,7 +8,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function MainProd() {
   const prods = useSelector(selectProd);
-  const newProd = prods?.slice(0,3);
+  const newProd = prods?.slice(14,17);
   
   console.log(newProd);
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ console.log(prods);
                 </div>
               </div>
             </div>
-            <div className="nameDiv">
+            <div className="nameDivs">
               <h3>{item.title}</h3>
               <span>${item.price}</span>
             </div>
