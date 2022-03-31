@@ -5,6 +5,7 @@ import Header from './Components/Header/Header';
 import Main from './Components/MainPhotos/Main';
 import MainProd from './Components/MainProduct/MainProd';
 import ModalMenu from './Components/Modal/ModalMenu';
+import Pylosopy from './Components/PhilosopyImg/Pylosopy';
 import Products from './Components/Products/Products';
 import ProductPhoto from './Components/ProductsPhoto/ProductPhoto';
 
@@ -31,13 +32,20 @@ function App() {
 
       <Routes>
         <Route path='/' element={<MainProd />} />
-        <Route path='/' element={<ModalMenu />} />
+
+      </Routes>
+
+
+      <Routes>
+      <Route path='/' element={<Pylosopy/>}/>
 
       </Routes>
       <Routes>
         <Route path='/' element={<ModalMenu />} />
 
+
       </Routes>
+      
 
       <Footer />
     </div>

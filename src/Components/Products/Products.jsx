@@ -31,7 +31,7 @@ export default function Products() {
             </div>
             <div className="nameDivs">
               <h3>{item.title}</h3>
-              <span>${item.price}</span>
+              <p>${item.price}</p>
             </div>
             
           </div>

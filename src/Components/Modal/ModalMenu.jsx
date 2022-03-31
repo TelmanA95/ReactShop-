@@ -27,9 +27,9 @@ export default function ModalMenu() {
                <p>The only prerequisite to join the gang is your love for bikes and a passion for the twist of the wrist. 
                Jump on a bike, free your mind and the rest will follow. <a className='spanLearn'>Learn More</a></p>
                
-               <span className='price'>${item.price}</span>
+               <h3 className='price'>${item.price}</h3>
                <hr className='line'></hr>
-               <p>Size</p>
+               <p className='size'>Size</p>
                <div className='sizeFlex'>
                    <div className='sizeDiv sizeDiv1'>M</div>
                    <div className='sizeDiv'>L</div>
@@ -45,7 +45,7 @@ export default function ModalMenu() {
                    <div className='countDiv'>
                        <button className='countBtn' onClick={minus}>-</button>
                        <div className='countSpan'>
-                           <p>{count}</p>
+                           <p >{count}</p>
                        </div>
                        <button className='countBtn' onClick = {() => dispatch(setCount())}>+</button>
                     </div>
