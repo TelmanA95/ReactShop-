@@ -63,7 +63,7 @@ export default function Header() {
       <nav className="nav2">
         <ul>
           <li>UNITED STATES (USD $)</li>
-          <li>LOG IN</li>
+          <NavLink className={"login"} to={"/login"}>LOG IN</NavLink>
 
           <li
             className="cart"

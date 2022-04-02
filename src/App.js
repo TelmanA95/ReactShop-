@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router';
 import './App.scss';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
+import Login from './Components/Login/Login';
 import Main from './Components/MainPhotos/Main';
 import MainProd from './Components/MainProduct/MainProd';
 import ModalMenu from './Components/Modal/ModalMenu';
@@ -23,6 +24,10 @@ function App() {
 
       <Header />
       {openModal && <ModalCart />}
+
+      <Routes>
+        <Route path='/login' element={<Login />} />
+      </Routes>
 
       <Routes>
         <Route path='/products' element={<ProductPhoto />} />
@@ -54,6 +59,9 @@ function App() {
 
       </Routes>
 
+
+
+<hr className='hr'/>
 
       <Footer />
     </div>
