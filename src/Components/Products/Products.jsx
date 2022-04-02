@@ -31,9 +31,9 @@ export default function Products() {
         </div>
         <div className="mainProd">
       
-      {prods?.map((item) => {
+      {prods?.map((item, i) => {
         return (
-          <div className="product">
+          <div key={i} className="product">
             <div className="imgDiv">
               <img src={item.image}></img>
               <div className="option">

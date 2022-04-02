@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 import "./Header.scss";
+import {
+  selectModal,
+  setModal,
+} from "../../Redux/CartModalSlice/cartModalSlice";
+import { useDispatch, useSelector } from "react-redux";
 export default function Header() {
   const [isHeaderShow, setIsHeaderShow] = useState(false);
+  const dispatch = useDispatch();
 
   const controlHeader = () => {
     if (window.scrollY > 100) {
@@ -27,7 +33,9 @@ export default function Header() {
             <a>HOME</a>
           </li>
           <li>
-            <NavLink className={"products"} to={"/products"}>All PRODUCTS</NavLink>
+            <NavLink className={"products"} to={"/products"}>
+              All PRODUCTS
+            </NavLink>
           </li>
 
           <li>
@@ -46,8 +54,7 @@ export default function Header() {
         </ul>
       </nav>
       <NavLink to={"/"}>
-        
-        <img 
+        <img
           className="img"
           src="//cdn.shopify.com/s/files/1/2090/4191/files/morning_logo_wulkan_wider_500x.png?v=1628499327"
           alt=""
@@ -58,8 +65,17 @@ export default function Header() {
           <li>UNITED STATES (USD $)</li>
           <li>LOG IN</li>
 
-          <li>CART</li>
-          <li className="BsSearch"><SearchIcon /></li>
+          <li
+            className="cart"
+            onClick={() => {
+              dispatch(setModal());
+            }}
+          >
+            CART
+          </li>
+          <li className="BsSearch">
+            <SearchIcon />
+          </li>
         </ul>
       </nav>
     </div>

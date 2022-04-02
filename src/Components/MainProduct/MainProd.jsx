@@ -10,10 +10,8 @@ export default function MainProd() {
   const prods = useSelector(selectProd);
   const newProd = prods?.slice(14, 17);
 
-  console.log(newProd);
   const dispatch = useDispatch();
 
-  console.log(prods);
   useEffect(() => {
     dispatch(getMainProdAsync());
   }, []);
@@ -25,9 +23,9 @@ export default function MainProd() {
         <div className="line"></div>
       </div>
       <div className="mainProd">
-        {newProd?.map((item) => {
+        {newProd?.map((item, i) => {
           return (
-            <div className="product">
+            <div key={i} className="product">
               <div className="imgDiv">
                 <img src={item.image}></img>
                 <div className="option">
