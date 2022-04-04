@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../Login/Login.scss";
 
 export default function Login() {
@@ -16,7 +17,7 @@ export default function Login() {
 
         <input type={"password"} className="passwoedinp" />
         <p>
-          <a className="forgotpsw">Forgot Your Password?</a>
+          <NavLink  to={"/forgotpsw"} className="forgotpsw">Forgot Your Password?</NavLink>
         </p>
         <div className="signin" aria-valuemax={"Sign IN"}>
           <input className="signinInp" type={"submit"} value="SIGN IN" />

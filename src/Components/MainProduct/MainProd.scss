@@ -27,6 +27,7 @@
     position: absolute;
     top: 260px;
     transition: 0.5s linear;
+    cursor: pointer;
 
     .optionDiv {
       display: flex;
@@ -43,6 +44,7 @@
 .imgDiv:hover {
   .option {
     opacity: 1;
+
   }
 }
 .nameDivs {
@@ -69,4 +71,8 @@
     background-color: #444631;
     text-align: center;
   }
+}
+.option:hover{
+  background-color: #353727;
+
 }

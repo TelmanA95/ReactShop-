@@ -11,18 +11,19 @@
     h2 {
       text-align: center;
     }
-  .line {
-    margin-top: 10px;
-    width: 36px;
-    height: 3px;
-    background-color: #444631;
-    text-align: center;
+    .line {
+      position: absolute;
+      margin-top: 18px;
+      width: 36px;
+      height: 3px;
+      background-color: #444631;
+      left: 49%;
+    }
   }
-}
   .inputs {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 54%;
     transform: translate(-50%, -50%);
     width: 48%;
 
@@ -39,6 +40,7 @@
 
       height: 23px;
       cursor: pointer;
+      outline: none;
     }
     .emailinp {
       width: 96%;
@@ -46,6 +48,7 @@
 
       height: 23px;
       cursor: pointer;
+      outline: none;
     }
   }
   p {
@@ -58,29 +61,37 @@
       background-color: #444631;
       height: auto;
       letter-spacing: 2px;
-      font-size: 11px;
+      font-size: 12px;
       padding: 9px 30px;
-      color: white;
+      color: #ffffff;
       border-radius: 0;
       line-height: 30px;
       cursor: pointer;
+
       border: none;
     }
-    .signinInp:hover{
+    .signinInp:hover {
       background-color: #353727;
     }
-    a{
+    a {
       margin-left: 25px;
       cursor: pointer;
       font-size: 11px;
       letter-spacing: 2px;
     }
-    a:hover{
+    a:hover {
       opacity: 0.7;
     }
   }
 }
-.forgotpsw:hover{
+
+.forgotpsw{
+  text-decoration: none;
+  color: #111;
+
+}
+
+.forgotpsw:hover {
   opacity: 0.7;
   cursor: pointer;
 }

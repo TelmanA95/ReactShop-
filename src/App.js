@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router';
 import './App.scss';
 import Footer from './Components/Footer/Footer';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
 import Main from './Components/MainPhotos/Main';
@@ -31,16 +32,15 @@ function App() {
 
       <Routes>
         <Route path='/products' element={<ProductPhoto />} />
-
-
-
       </Routes>
 
       <Routes>
-
         <Route path='/products' element={<Products />} />
         <Route path='/' element={<Main />} />
 
+      </Routes>
+      <Routes>
+        <Route path='/forgotpsw' element={<ForgotPassword/>}/>
       </Routes>
 
       <Routes>
