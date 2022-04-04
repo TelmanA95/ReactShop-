@@ -86,7 +86,9 @@
   .countDiv {
     width: 30%;
     display: flex;
+    cursor: pointer;
     .countBtn {
+      cursor: pointer;
       width: 30px;
       height: 30px;
       border: 1px solid black;
@@ -96,7 +98,6 @@
       height: 28px;
       border: 1px solid black;
       text-align: center;
-      
     }
   }
 }

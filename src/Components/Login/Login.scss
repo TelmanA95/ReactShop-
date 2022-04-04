@@ -4,31 +4,83 @@
   height: 100vh;
   .loginTitle {
     width: 100%;
-
     position: absolute;
     left: 50%;
-    top: 20%;
+    top: 25%;
     transform: translate(-50%, -50%);
-    h2{
-        text-align: center;
+    h2 {
+      text-align: center;
     }
+  .line {
+    margin-top: 10px;
+    width: 36px;
+    height: 3px;
+    background-color: #444631;
+    text-align: center;
   }
-  .inputs{
+}
+  .inputs {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 45%;
     transform: translate(-50%, -50%);
     width: 48%;
-      
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 100%;
-        padding: 12px;
 
-          height: 30px;
-          cursor: pointer;
-          margin-top: 15px;
-      }
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 1rem;
+      line-height: 1.7em;
+      padding-top: 25px;
+    }
+    .passwoedinp {
+      width: 96%;
+      padding: 12px;
+
+      height: 23px;
+      cursor: pointer;
+    }
+    .emailinp {
+      width: 96%;
+      padding: 12px;
+
+      height: 23px;
+      cursor: pointer;
+    }
   }
+  p {
+    text-align: right;
+    margin-top: 15px;
+  }
+  .signin {
+    margin-top: 18px;
+    .signinInp {
+      background-color: #444631;
+      height: auto;
+      letter-spacing: 2px;
+      font-size: 11px;
+      padding: 9px 30px;
+      color: white;
+      border-radius: 0;
+      line-height: 30px;
+      cursor: pointer;
+      border: none;
+    }
+    .signinInp:hover{
+      background-color: #353727;
+    }
+    a{
+      margin-left: 25px;
+      cursor: pointer;
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    a:hover{
+      opacity: 0.7;
+    }
+  }
+}
+.forgotpsw:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }

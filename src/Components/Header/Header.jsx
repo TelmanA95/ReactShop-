@@ -71,7 +71,7 @@ export default function Header() {
               dispatch(setModal());
             }}
           >
-            CART
+            CART( 0 )
           </li>
           <li className="BsSearch">
             <SearchIcon />
