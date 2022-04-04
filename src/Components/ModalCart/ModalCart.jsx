@@ -11,20 +11,21 @@ export default function ModalCart() {
       <div className="modalContainer">
         <div className="cartTitle">
           <h2>Shopping Cart</h2>
-          <span
+        
+        </div>
+        <div className="cartBody">
+          <h5>Your cart is currently empty.</h5>
+          <RemoveShoppingCartIcon className="icon"/>
+
+          <button>Shop Now</button>
+        </div>
+        <span
             onClick={() => {
               dispatch(closeModal());
             }}
           >
             X
           </span>
-        </div>
-        <div className="cartBody">
-          <h3>Your cart is currently empty.</h3>
-          <RemoveShoppingCartIcon/>
-
-          <button>Shop Now</button>
-        </div>
       </div>
     </div>
   );
