@@ -1,6 +1,7 @@
 import "./Main.scss";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import img1 from "../../Photos/2.png";
+import { NavLink } from "react-router-dom";
 
 
 export default function Main() {
@@ -14,7 +15,7 @@ export default function Main() {
           important elements of each garmend and let go of everthing superfluous.
         </p>
         <div>
-          <button className="btn"> <p>SHOP NOW</p> <NavigateNextIcon  className="icon" /></button>
+          <button className="btn"> <NavLink className={"shopBtn"} to={"/products"}>SHOP NOW</NavLink> <NavigateNextIcon  className="icon" /></button>
         </div>
     </div>
     </div>

@@ -13,7 +13,7 @@ export const store = configureStore({
         products:productSlice,
         mainProd:mainProductSlice,
         counter:counterSlice,
-        modal: cartModalSlice,
+        cart: cartModalSlice,
     }
 })
 

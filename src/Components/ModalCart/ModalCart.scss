@@ -6,11 +6,12 @@
 }
 
 .modalContainer {
-  background-color: #f2f2f2ff;
+
+  background-color: #ffffff;
   border: 1px solid;
   position: absolute;
-  width: 700px;
-  height: 300px;
+  min-width: 700px;
+  min-height: 300px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -39,6 +40,10 @@
       padding: 9px 30px;
       line-height: 30px;
       bottom: 0;
+      .shopNow {
+        text-decoration: none;
+        color: #ffffff;
+      }
     }
     .icon {
       width: 100px;
@@ -54,9 +59,9 @@
 
   line-height: 54px;
   letter-spacing: 2px;
-  // font-size: 22px;
+  
 }
-span {
+.close {
   cursor: pointer;
   position: absolute;
   font-size: 24px;

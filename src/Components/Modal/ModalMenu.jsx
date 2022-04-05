@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { minusCount, selectCount, setCount } from '../../Redux/CounterSlice/counterSlice'
 import { selectProd } from '../../Redux/productSlice/productSlice'
-import '../Modal/modal.scss'
+import '../Modal/Modal.scss'
 export default function ModalMenu() {
     const count = useSelector(selectCount)
     const prods = useSelector(selectProd);
