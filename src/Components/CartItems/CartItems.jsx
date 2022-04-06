@@ -3,7 +3,7 @@ import "../CartItems/CartItems.scss";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addItemToCard,
-  getCartItem,
+  closeModal,
   getTotals,
   minusProd,
 } from "../../Redux/CartModalSlice/cartModalSlice";
@@ -66,7 +66,7 @@ export default function CartItems() {
         </div>
       </div>
       <div className="cartFootBtn">
-        <button className="cntBtn">CONTINUE SHOPPING</button>
+        <button onClick={()=>{dispatch(closeModal())}} className="cntBtn">CONTINUE SHOPPING</button>
         <button className="chekBtn">CHEK OUT</button>
       </div>
     </div>

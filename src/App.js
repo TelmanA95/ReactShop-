@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router';
 import './App.scss';
+import CreateAccount from './Components/CreateAccount/CreateAccount';
 import Footer from './Components/Footer/Footer';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import Header from './Components/Header/Header';
@@ -55,8 +56,10 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/' element={<ModalMenu />} />
+      </Routes>
 
-
+      <Routes>
+        <Route path='/create' element={<CreateAccount/>}/>
       </Routes>
 
 

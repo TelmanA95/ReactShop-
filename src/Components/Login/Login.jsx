@@ -14,14 +14,13 @@ export default function Login() {
         <label>Email</label>
         <input type={"emial"} className="emailinp" />
         <label>Password</label>
-
         <input type={"password"} className="passwoedinp" />
         <p>
           <NavLink  to={"/forgotpsw"} className="forgotpsw">Forgot Your Password?</NavLink>
         </p>
         <div className="signin" aria-valuemax={"Sign IN"}>
           <input className="signinInp" type={"submit"} value="SIGN IN" />
-          <a>CREATE ACCOUNT</a>
+          <NavLink className={"create"} to={"/create"}>CREATE ACCOUNT</NavLink>
         </div>
       </form>
     </div>

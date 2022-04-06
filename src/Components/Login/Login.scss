@@ -37,7 +37,6 @@
     .passwoedinp {
       width: 96%;
       padding: 12px;
-
       height: 23px;
       cursor: pointer;
       outline: none;
@@ -73,11 +72,13 @@
     .signinInp:hover {
       background-color: #353727;
     }
-    a {
+    .create {
       margin-left: 25px;
       cursor: pointer;
       font-size: 11px;
       letter-spacing: 2px;
+      color: #111;
+      text-decoration: none;
     }
     a:hover {
       opacity: 0.7;

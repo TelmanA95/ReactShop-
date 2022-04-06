@@ -71,7 +71,7 @@ export default function Header() {
               dispatch(setModal());
             }}
           >
-            CART( {cartTotalQuantity.cartTotalQuantity} )  
+            CART({cartTotalQuantity.cartTotalQuantity})  
           </li>
           <li className="BsSearch">
             <SearchIcon />

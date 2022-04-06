@@ -1,6 +1,9 @@
 .cartContiner {
   width: 100%;
   background-color: #ffffff;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
 
   .prodCarts {
     margin: 20px;
