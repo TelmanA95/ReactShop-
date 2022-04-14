@@ -13,6 +13,7 @@ import ModalCart from './Components/ModalCart/ModalCart';
 import Pylosopy from './Components/PhilosopyImg/Pylosopy';
 import Products from './Components/Products/Products';
 import ProductPhoto from './Components/ProductsPhoto/ProductPhoto';
+import Slider from './Components/Slider/Slider';
 import { selectModal } from './Redux/CartModalSlice/cartModalSlice';
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
       <Routes>
         <Route path='/' element={<MainProd />} />
 
+      </Routes>
+      <Routes>
+        <Route path='/' element={<Slider/>} />
       </Routes>
 
 

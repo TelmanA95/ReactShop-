@@ -2,8 +2,8 @@ import { configureStore } from "@reduxjs/toolkit";
 import mainProductSlice from "../mainProductSlice/mainProductSlice";
 import productSlice from "../productSlice/productSlice";
 import counterSlice from "../CounterSlice/counterSlice";
-import { counter } from "@fortawesome/fontawesome-svg-core";
 import cartModalSlice from "../CartModalSlice/cartModalSlice";
+import sliderSlice from "../SliderSlice/sliderSlice";
 
 export const store = configureStore({
 
@@ -14,6 +14,7 @@ export const store = configureStore({
         mainProd:mainProductSlice,
         counter:counterSlice,
         cart: cartModalSlice,
+        slider:sliderSlice,
     }
 })
 
