@@ -1,6 +1,5 @@
 import "./Main.scss";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-// import img1 from "../../Photos/2.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -12,7 +11,6 @@ export default function Main() {
   const images = useSelector(selectImages);
   const length = images.length;
 
-
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
@@ -20,7 +18,6 @@ export default function Main() {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  console.log(current);
   return (
     <>
       <div className="bigDiv">

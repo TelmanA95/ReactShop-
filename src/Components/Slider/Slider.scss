@@ -1,0 +1,64 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  .left {
+    cursor: pointer;
+    .MuiSvgIcon-root {
+      font-size: 80px;
+      color: #212121;
+    }
+  }
+  .left:hover {
+    opacity: 0.7;
+  }
+  .right {
+    cursor: pointer;
+    .MuiSvgIcon-root {
+      font-size: 80px;
+      color: #212121;
+    }
+  }
+  .right:hover {
+    opacity: 0.7;
+  }
+}
+
+.slideContiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  transition: all 1s ease;
+
+  .jimmy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 680px;
+    text-align: center;
+
+    .instIcon {
+      .insta {
+        color: #636363ff;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+    }
+    .text {
+      font-size: 1.6rem;
+      line-height: 1.7;
+      padding-bottom: 20px;
+    }
+  }
+  .jimmyTitle {
+    font-size: 18px;
+  }
+  .instaTitle {
+    color: rgba(33, 33, 33, 0.7);
+  }
+}
