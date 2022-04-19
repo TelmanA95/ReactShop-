@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Header.scss";
-import {
-  setModal,
-} from "../../Redux/CartModalSlice/cartModalSlice";
+import { setModal } from "../../Redux/CartModalSlice/cartModalSlice";
 import { useDispatch, useSelector } from "react-redux";
 export default function Header() {
   const [isHeaderShow, setIsHeaderShow] = useState(false);
-  const cartTotalQuantity = useSelector((state)=>state.cart)
+  const cartTotalQuantity = useSelector((state) => state.cart);
   const dispatch = useDispatch();
-
   const controlHeader = () => {
     if (window.scrollY > 100) {
       setIsHeaderShow(true);
@@ -63,7 +60,9 @@ export default function Header() {
       <nav className="nav2">
         <ul>
           <li>UNITED STATES (USD $)</li>
-          <NavLink className={"login"} to={"/login"}>LOG IN</NavLink>
+          <NavLink className={"login"} to={"/login"}>
+            LOG IN
+          </NavLink>
 
           <li
             className="cart"
@@ -71,7 +70,7 @@ export default function Header() {
               dispatch(setModal());
             }}
           >
-            CART({cartTotalQuantity.cartTotalQuantity})  
+            CART({cartTotalQuantity.cartTotalQuantity})
           </li>
           <li className="BsSearch">
             <SearchIcon />

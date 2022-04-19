@@ -1,0 +1,39 @@
+.burgerBackgraund {
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+
+  .burgerMenu {
+    background-color: #ffffff;
+    width: 320px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: 2s ease;
+    span {
+      font-size: 38px;
+      padding: 20px;
+      cursor: pointer;
+    }
+  }
+  .burgerMenu.openMenu {
+    transform: translateX(0);
+    transition: 2s ease;
+  }
+  .mobileNav {
+    font-size: 16px;
+    hr {
+      margin: 0 20px;
+      opacity: 0.7;
+    }
+    ul {
+      li {
+        text-align: left;
+        list-style: none;
+        padding: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}

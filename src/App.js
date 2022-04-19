@@ -4,6 +4,8 @@ import './App.scss';
 import CreateAccount from './Components/CreateAccount/CreateAccount';
 import Footer from './Components/Footer/Footer';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
+import BurgerHeader from './Components/Header/BurgerHeader/BurgerHeader';
+import BurgerMenu from './Components/Header/BurgerMenu/BurgerMenu';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
 import Main from './Components/MainPhotos/Main';
@@ -15,17 +17,17 @@ import Products from './Components/Products/Products';
 import ProductPhoto from './Components/ProductsPhoto/ProductPhoto';
 import Slider from './Components/Slider/Slider';
 import { selectModal } from './Redux/CartModalSlice/cartModalSlice';
-
+import { selectMobile } from './Redux/mobileMenuSlice/mobileMenuSlice';
 function App() {
   const openModal = useSelector(selectModal);
-
-
+  const openMobile = useSelector(selectMobile)
 
 
   return (
     <div className="App" >
-
+      {openMobile && <BurgerMenu />}
       <Header />
+      <BurgerHeader />
       {openModal && <ModalCart />}
 
       <Routes>
@@ -42,7 +44,7 @@ function App() {
 
       </Routes>
       <Routes>
-        <Route path='/forgotpsw' element={<ForgotPassword/>}/>
+        <Route path='/forgotpsw' element={<ForgotPassword />} />
       </Routes>
 
       <Routes>
@@ -50,7 +52,7 @@ function App() {
 
       </Routes>
       <Routes>
-        <Route path='/' element={<Slider/>} />
+        <Route path='/' element={<Slider />} />
       </Routes>
 
 
@@ -63,12 +65,12 @@ function App() {
       </Routes>
 
       <Routes>
-        <Route path='/create' element={<CreateAccount/>}/>
+        <Route path='/create' element={<CreateAccount />} />
       </Routes>
 
 
 
-<hr className='hr'/>
+      <hr className='hr' />
 
       <Footer />
     </div>

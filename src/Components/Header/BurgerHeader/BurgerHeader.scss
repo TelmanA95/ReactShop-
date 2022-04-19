@@ -1,0 +1,40 @@
+.burgerHeader {
+  display: none;
+}
+
+@media (max-width: 1092px) {
+  .burgerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: #fff;
+    z-index: 1;
+  }
+  .img {
+    vertical-align: baseline;
+    width: 250px;
+    height: auto;
+    max-height: 100px;
+    padding: 27px 0;
+    padding-top: 27px;
+    padding-right: 0px;
+    padding-bottom: 27px;
+    padding-left: 0px;
+    box-sizing: inherit;
+    text-align: center;
+  }
+
+  .burgerIcons {
+    padding-right: 10px;
+
+    .MuiSvgIcon-root {
+      font-size: 35px !important;
+    }
+  }
+
+  .burgerIcon {
+    font-size: 35px !important;
+    padding-left: 10px;
+  }
+}

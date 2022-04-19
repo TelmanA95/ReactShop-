@@ -66,7 +66,14 @@ export default function CartItems() {
         </div>
       </div>
       <div className="cartFootBtn">
-        <button onClick={()=>{dispatch(closeModal())}} className="cntBtn">CONTINUE SHOPPING</button>
+        <button
+          onClick={() => {
+            dispatch(closeModal());
+          }}
+          className="cntBtn"
+        >
+          CONTINUE SHOPPING
+        </button>
         <button className="chekBtn">CHEK OUT</button>
       </div>
     </div>

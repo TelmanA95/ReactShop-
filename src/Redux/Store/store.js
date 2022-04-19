@@ -4,17 +4,19 @@ import productSlice from "../productSlice/productSlice";
 import counterSlice from "../CounterSlice/counterSlice";
 import cartModalSlice from "../CartModalSlice/cartModalSlice";
 import sliderSlice from "../SliderSlice/sliderSlice";
+import mobileMenuSlice from "../mobileMenuSlice/mobileMenuSlice";
 
 export const store = configureStore({
 
-    
+
     reducer: {
 
-        products:productSlice,
-        mainProd:mainProductSlice,
-        counter:counterSlice,
+        products: productSlice,
+        mainProd: mainProductSlice,
+        counter: counterSlice,
         cart: cartModalSlice,
-        slider:sliderSlice,
+        slider: sliderSlice,
+        mobile: mobileMenuSlice,
     }
 })
 

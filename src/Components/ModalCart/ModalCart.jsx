@@ -9,8 +9,13 @@ export default function ModalCart() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   return (
-    <div className="modalBackgraund">
-      <div className="modalContainer">
+    <div
+      className="modalBackgraund"
+      onClick={() => {
+        dispatch(closeModal());
+      }}
+    >
+      <div className="modalContainer" onClick={(e) => e.stopPropagation()}>
         <div className="cartTitle">
           <h2>Shopping Cart</h2>
         </div>

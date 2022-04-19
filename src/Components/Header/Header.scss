@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 .header {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -79,4 +79,13 @@ li:hover {
 }
 .login:hover {
   opacity: 0.7;
+}
+
+
+
+@media (max-width: 1092px) {
+ 
+ .header{
+   display: none;
+ }
 }
