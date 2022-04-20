@@ -7,20 +7,18 @@
 
   .burgerMenu {
     background-color: #ffffff;
+    overflow: scroll;
+    overflow-x: hidden;
     width: 320px;
     height: 100vh;
-    transform: translateX(-100%);
-    transition: 2s ease;
+  
     span {
       font-size: 38px;
       padding: 20px;
       cursor: pointer;
     }
   }
-  .burgerMenu.openMenu {
-    transform: translateX(0);
-    transition: 2s ease;
-  }
+  
   .mobileNav {
     font-size: 16px;
     hr {
@@ -34,6 +32,52 @@
         padding: 20px;
         cursor: pointer;
       }
+    }
+  }
+  .searchPanel {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    input {
+      width: 80%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-color: rgba(17, 17, 17, 0.1);
+      padding: 12px;
+      letter-spacing: 1px;
+      line-height: 42px;
+      text-align: left;
+      outline: none;
+    }
+  }
+  .mobileFooter {
+    margin-top: 18px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 12px;
+    h4 {
+      margin-bottom: 12px;
+      line-height: 1.8;
+      font-size: 20px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    .socialIcons {
+      margin-top: 18px;
+      margin-bottom: 12px;
+
+      .social-svg {
+        width: 37px !important;
+        height: 37px !important;
+        margin: 0 1px !important;
+      }
+    }
+    .mobileImg{
+      width: 100%;
+      margin-bottom: 12px;
     }
   }
 }

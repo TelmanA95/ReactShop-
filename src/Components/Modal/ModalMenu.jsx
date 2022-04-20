@@ -18,8 +18,8 @@ export default function ModalMenu() {
     <div className='modalDiv'>
        {newProd?.map(item => {
            return <>
-           <div className='imgModal'>
-             <img  src={item.image} />
+           <div  className='imgModal'>
+             <img key={item.id} src={item.image} />
            </div>
            <div className='menuModal'>
                <h1>Clubber Tee</h1>
