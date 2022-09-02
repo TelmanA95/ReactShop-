@@ -12,20 +12,28 @@
   position: relative;
   color: #ffffffff;
   overflow: hidden;
-  background-color: #353727;
   visibility: visible;
-  opacity: 1;
+  margin: 0 35px;
   .carPic {
     width: 100%;
-    height: 100vh;
+    max-height: 600px;
     object-fit: cover;
     animation: photoAnimation 10s infinite alternate;
   }
+    .bkg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #54492aff;
+      opacity: 0.5;
+      z-index: 1;
+    }
   .titlePsi {
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 333;
     .morDiv {
       display: flex;
       justify-content: center;

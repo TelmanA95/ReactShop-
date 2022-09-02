@@ -6,6 +6,7 @@ import mor from "../../Photos/mor.png";
 export default function Pylosopy() {
   return (
     <div className="photoPylosopy">
+      <div className="bkg"></div>
       <img className="carPic" src={img} />
       <div className="titlePsi">
         <div className="morDiv">

@@ -1,24 +1,22 @@
 .mainProd {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
   padding: 50px;
 }
 
 
 .imgDiv {
-  width: 300px;
+  max-width: 300px;
   height: 300px;
   background-color: #f5f5f5;
-  position: relative;
   margin: 0 20px;
   img {
     width: 220px;
     height: 220px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
   }
   .option {
     opacity: 0;
@@ -26,9 +24,8 @@
     height: 50px;
     background-color: #444631;
     color: #FFFFFF;
-    position: absolute;
     bottom: 0;
-    transition: 0.5s linear;
+    transition: all 0.5s linear;
 
     .optionDiv {
       display: flex;
@@ -52,7 +49,10 @@
 .nameDivs {
   // width: 250px;
   // height: auto;
-  margin-top: 20px;
+  // margin-top: 20px;
+  // margin: 20px 0 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 12px; 
   letter-spacing: 2px;

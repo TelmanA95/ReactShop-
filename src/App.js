@@ -7,7 +7,9 @@ import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import BurgerHeader from './Components/Header/BurgerHeader/BurgerHeader';
 import BurgerMenu from './Components/Header/BurgerMenu/BurgerMenu';
 import Header from './Components/Header/Header';
+import Location from './Components/Location/Location';
 import Login from './Components/Login/Login';
+import MainBlocks from './Components/MainBlocks/MainBlocks';
 import Main from './Components/MainPhotos/Main';
 import MainProd from './Components/MainProduct/MainProd';
 import ModalMenu from './Components/Modal/ModalMenu';
@@ -62,6 +64,12 @@ function App() {
       </Routes>
       <Routes>
         <Route path='/' element={<ModalMenu />} />
+      </Routes>
+      <Routes>
+        <Route path='/' element={<MainBlocks/>}/>
+      </Routes>
+      <Routes>
+        <Route path='/' element={<Location/>}/>
       </Routes>
 
       <Routes>
